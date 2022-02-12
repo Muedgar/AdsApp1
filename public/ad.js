@@ -13,7 +13,7 @@ const showTasks = async () => {
     } = await axios.get('/api/v1/ads')
     console.log(ads);
     if (ads.length < 1) {
-      tasksDOM.innerHTML = '<h5 class="empty-list">No tasks in your list</h5>'
+      tasksDOM.innerHTML = '<h5 class="empty-list">No ads in your list</h5>'
       return
     }
     const allTasks = ads
